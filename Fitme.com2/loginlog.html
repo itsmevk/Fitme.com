@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitme-Login & Register</title>
+    <link rel="stylesheet" href="loginlogout.css">
+</head>
+<body> 
+    <div class="div-box"></div>
+        <div class="form-box">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Register</button>
+            </div>
+         
+           
+            <form id="login" class="form21" action="main3.html">
+             <input type="text" class="input-field" placeholder="Username,Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox" required><span class="rem">Remember me</span>
+                <button type="submit" class="submit-btn">Login</button>
+                        <div class="container">
+                            <span class="forget"><a href="#">Forget password?</a></span>
+
+                        </div>
+            </form>
+          
+            <form id="signup" class="form21" action="loginlog.html">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="checkbox" required><span class="terms">I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Signup</button> 
+            </form>
+        </div>
+    </div>
+        <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("signup");
+                var z = document.getElementById("btn");
+
+                function signup(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "110px";
+                    
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "0";
+                    
+                }
+        </script>    
+         
+</body>
+<footer class="tm-footer">
+    Copyright &copy; Fitme.com 2020. All rights reserved.
+
+</footer> 
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body,html{
+    margin:0;
+    background-color: black;
+}
+.tm-footer{
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background: linear-gradient(to right,black,white);
+    text-align: center;
+    padding: 20px;
+}
+.tm-header ::after{
+    content: " ";
+    clear: both;
+    display: block;
+    visibility:none;
+}
+.tm-logo{
+    float: left;
+}
+.tm-nav{
+    text-align: center;
+    float: right;
+}
+
+.tm-nav ul li{
+
+    margin: 15px;
+    display: inline-block;
+
+}
+.tm-nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #303030;
+    line-height: 70px;
+}
+
+.tm-nav ul li a:hover{
+    color: #3e99ff;
+}
+
+.tm-header{
+   margin: 0px;
+    width: 100%;
+    height: 70px;
+    background:linear-gradient(to right,black,white);
+}
+.tm-container{
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+/*flexboxes*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+    max-width: 100%;
+    
+}
+.flex-container > div {
+    background:linear-gradient(to right, black,grey);
+    color: black;
+    margin-top:100px;
+   width: 1000px;
+   height: 250px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .innerdiv{
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+  }
+  .innerdiv>div{
+
+      color: rgb(158, 155, 150);
+    margin-left: 20px;
+    background-color: black;
+    margin-top:20px;
+   width: 700px;
+   height: 200px;
+    
+   
+    font-size: 30px;
+    overflow-y: scroll;
+  }
+  .tm-article{
+    color:lightyellow;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    border: 2px;
+    text-align: left;
+  }
+  .tm-article h1{
+    background-color: black;
+    margin-top: 15px;
+    color: orange ;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s;
+    
+}
+p{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+  .img-container{
+    margin-top: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 250px;
+    float:right;
+    
+}

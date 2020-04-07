@@ -1,0 +1,1 @@
+Open Home.html file.(Its the homepage of the website)
